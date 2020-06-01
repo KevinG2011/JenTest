@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,41 @@
 		2A120AB8226F42210084DB8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A120AB7226F42210084DB8F /* Assets.xcassets */; };
 		2A120ABB226F42210084DB8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A120AB9226F42210084DB8F /* LaunchScreen.storyboard */; };
 		2A120ABE226F42210084DB8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A120ABD226F42210084DB8F /* main.m */; };
+		2AB29CD3237C13DF00A1A8CB /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AB29CD2237C13DF00A1A8CB /* data.json */; };
+		2AB29CD5237C150500A1A8CB /* JenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB29CD4237C150500A1A8CB /* JenTest.swift */; };
+		2AB29CD8237C339D00A1A8CB /* pk_dice.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB29CD6237C339C00A1A8CB /* pk_dice.png */; };
+		2AB29CD9237C339D00A1A8CB /* pk_animation_dice.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AB29CD7237C339D00A1A8CB /* pk_animation_dice.json */; };
+		2AE2C64E2484FA51001F69B6 /* JenUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2C64D2484FA51001F69B6 /* JenUnitTests.m */; };
+		A4C3EC685392E6B803A774A1 /* libPods-JenUnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C70B28978BB0F88B065E98F /* libPods-JenUnitTests.a */; };
+		E3130270DD13C906DA22DF20 /* libPods-JenTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6369EFDB03F846C5AC974BD /* libPods-JenTest.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2AE2C6502484FA51001F69B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A120AA3226F421F0084DB8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A120AAA226F421F0084DB8F;
+			remoteInfo = JenTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2AC5958A2270225800A6676D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1C6427A10D4DC6503515AFD9 /* Pods-JenTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenTest.release.xcconfig"; path = "Target Support Files/Pods-JenTest/Pods-JenTest.release.xcconfig"; sourceTree = "<group>"; };
+		23A88EEF7A21D891E820C2E7 /* Pods-JenTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenTest.debug.xcconfig"; path = "Target Support Files/Pods-JenTest/Pods-JenTest.debug.xcconfig"; sourceTree = "<group>"; };
 		2A120AAB226F421F0084DB8F /* JenTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A120AAE226F421F0084DB8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A120AAF226F421F0084DB8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +58,18 @@
 		2A120ABA226F42210084DB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A120ABC226F42210084DB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A120ABD226F42210084DB8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2AB29CCF237C107300A1A8CB /* JenTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JenTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		2AB29CD2237C13DF00A1A8CB /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		2AB29CD4237C150500A1A8CB /* JenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenTest.swift; sourceTree = "<group>"; };
+		2AB29CD6237C339C00A1A8CB /* pk_dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pk_dice.png; sourceTree = "<group>"; };
+		2AB29CD7237C339D00A1A8CB /* pk_animation_dice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pk_animation_dice.json; sourceTree = "<group>"; };
+		2AE2C64B2484FA51001F69B6 /* JenUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JenUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE2C64D2484FA51001F69B6 /* JenUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JenUnitTests.m; sourceTree = "<group>"; };
+		2AE2C64F2484FA51001F69B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C9B285A35B1E13D16D4B87 /* Pods-JenUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenUnitTests.release.xcconfig"; path = "Target Support Files/Pods-JenUnitTests/Pods-JenUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		6C70B28978BB0F88B065E98F /* libPods-JenUnitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JenUnitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		744B639C738A169AA4190B09 /* Pods-JenUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-JenUnitTests/Pods-JenUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6369EFDB03F846C5AC974BD /* libPods-JenTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JenTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +77,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3130270DD13C906DA22DF20 /* libPods-JenTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE2C6482484FA51001F69B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C3EC685392E6B803A774A1 /* libPods-JenUnitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				2A120AAD226F421F0084DB8F /* JenTest */,
+				2AE2C64C2484FA51001F69B6 /* JenUnitTests */,
 				2A120AAC226F421F0084DB8F /* Products */,
+				838E0235D5B6415EF5B6D817 /* Pods */,
+				E02DF2A16FCBCEED239E09D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				2A120AAB226F421F0084DB8F /* JenTest.app */,
+				2AE2C64B2484FA51001F69B6 /* JenUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,17 +115,51 @@
 		2A120AAD226F421F0084DB8F /* JenTest */ = {
 			isa = PBXGroup;
 			children = (
+				2AB29CD2237C13DF00A1A8CB /* data.json */,
+				2AB29CD7237C339D00A1A8CB /* pk_animation_dice.json */,
+				2AB29CD6237C339C00A1A8CB /* pk_dice.png */,
 				2A120AAE226F421F0084DB8F /* AppDelegate.h */,
 				2A120AAF226F421F0084DB8F /* AppDelegate.m */,
 				2A120AB1226F421F0084DB8F /* ViewController.h */,
 				2A120AB2226F421F0084DB8F /* ViewController.m */,
+				2AB29CD4237C150500A1A8CB /* JenTest.swift */,
 				2A120AB4226F421F0084DB8F /* Main.storyboard */,
 				2A120AB7226F42210084DB8F /* Assets.xcassets */,
 				2A120AB9226F42210084DB8F /* LaunchScreen.storyboard */,
 				2A120ABC226F42210084DB8F /* Info.plist */,
 				2A120ABD226F42210084DB8F /* main.m */,
+				2AB29CCF237C107300A1A8CB /* JenTest-Bridging-Header.h */,
 			);
 			path = JenTest;
+			sourceTree = "<group>";
+		};
+		2AE2C64C2484FA51001F69B6 /* JenUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE2C64D2484FA51001F69B6 /* JenUnitTests.m */,
+				2AE2C64F2484FA51001F69B6 /* Info.plist */,
+			);
+			path = JenUnitTests;
+			sourceTree = "<group>";
+		};
+		838E0235D5B6415EF5B6D817 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23A88EEF7A21D891E820C2E7 /* Pods-JenTest.debug.xcconfig */,
+				1C6427A10D4DC6503515AFD9 /* Pods-JenTest.release.xcconfig */,
+				744B639C738A169AA4190B09 /* Pods-JenUnitTests.debug.xcconfig */,
+				66C9B285A35B1E13D16D4B87 /* Pods-JenUnitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E02DF2A16FCBCEED239E09D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6369EFDB03F846C5AC974BD /* libPods-JenTest.a */,
+				6C70B28978BB0F88B065E98F /* libPods-JenUnitTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A120AC1226F42210084DB8F /* Build configuration list for PBXNativeTarget "JenTest" */;
 			buildPhases = (
+				ACB1E44A13D9229EA393490F /* [CP] Check Pods Manifest.lock */,
 				2A120AA7226F421F0084DB8F /* Sources */,
 				2A120AA8226F421F0084DB8F /* Frameworks */,
 				2A120AA9226F421F0084DB8F /* Resources */,
+				2AC5958A2270225800A6676D /* Embed Frameworks */,
+				491E60710CF7EDEB2912BC82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,6 +184,25 @@
 			productName = JenTest;
 			productReference = 2A120AAB226F421F0084DB8F /* JenTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2AE2C64A2484FA51001F69B6 /* JenUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE2C6542484FA51001F69B6 /* Build configuration list for PBXNativeTarget "JenUnitTests" */;
+			buildPhases = (
+				DB1F8FEB2221BC5F3D1BF384 /* [CP] Check Pods Manifest.lock */,
+				2AE2C6472484FA51001F69B6 /* Sources */,
+				2AE2C6482484FA51001F69B6 /* Frameworks */,
+				2AE2C6492484FA51001F69B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE2C6512484FA51001F69B6 /* PBXTargetDependency */,
+			);
+			name = JenUnitTests;
+			productName = JenUnitTests;
+			productReference = 2AE2C64B2484FA51001F69B6 /* JenUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -102,6 +215,11 @@
 				TargetAttributes = {
 					2A120AAA226F421F0084DB8F = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1120;
+					};
+					2AE2C64A2484FA51001F69B6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 2A120AAA226F421F0084DB8F;
 					};
 				};
 			};
@@ -119,6 +237,7 @@
 			projectRoot = "";
 			targets = (
 				2A120AAA226F421F0084DB8F /* JenTest */,
+				2AE2C64A2484FA51001F69B6 /* JenUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,13 +247,87 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB29CD9237C339D00A1A8CB /* pk_animation_dice.json in Resources */,
+				2AB29CD8237C339D00A1A8CB /* pk_dice.png in Resources */,
 				2A120ABB226F42210084DB8F /* LaunchScreen.storyboard in Resources */,
 				2A120AB8226F42210084DB8F /* Assets.xcassets in Resources */,
 				2A120AB6226F421F0084DB8F /* Main.storyboard in Resources */,
+				2AB29CD3237C13DF00A1A8CB /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE2C6492484FA51001F69B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		491E60710CF7EDEB2912BC82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JenTest/Pods-JenTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JenTest/Pods-JenTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JenTest/Pods-JenTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACB1E44A13D9229EA393490F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JenTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB1F8FEB2221BC5F3D1BF384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JenUnitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A120AA7226F421F0084DB8F /* Sources */ = {
@@ -142,12 +335,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A120AB3226F421F0084DB8F /* ViewController.m in Sources */,
+				2AB29CD5237C150500A1A8CB /* JenTest.swift in Sources */,
 				2A120ABE226F42210084DB8F /* main.m in Sources */,
 				2A120AB0226F421F0084DB8F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2AE2C6472484FA51001F69B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE2C64E2484FA51001F69B6 /* JenUnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AE2C6512484FA51001F69B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A120AAA226F421F0084DB8F /* JenTest */;
+			targetProxy = 2AE2C6502484FA51001F69B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2A120AB4226F421F0084DB8F /* Main.storyboard */ = {
@@ -283,37 +493,102 @@
 		};
 		2A120AC2226F42210084DB8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23A88EEF7A21D891E820C2E7 /* Pods-JenTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48E3LB8PD7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = JenTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huajiao.jenkinsTest.JenTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "JenTest/JenTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		2A120AC3226F42210084DB8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C6427A10D4DC6503515AFD9 /* Pods-JenTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48E3LB8PD7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = JenTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huajiao.jenkinsTest.JenTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "JenTest/JenTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2AE2C6522484FA51001F69B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744B639C738A169AA4190B09 /* Pods-JenUnitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48E3LB8PD7;
+				INFOPLIST_FILE = JenUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huajiao.stereotype.JenUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JenTest.app/JenTest";
+			};
+			name = Debug;
+		};
+		2AE2C6532484FA51001F69B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C9B285A35B1E13D16D4B87 /* Pods-JenUnitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48E3LB8PD7;
+				INFOPLIST_FILE = JenUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huajiao.stereotype.JenUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JenTest.app/JenTest";
 			};
 			name = Release;
 		};
@@ -334,6 +609,15 @@
 			buildConfigurations = (
 				2A120AC2226F42210084DB8F /* Debug */,
 				2A120AC3226F42210084DB8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE2C6542484FA51001F69B6 /* Build configuration list for PBXNativeTarget "JenUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE2C6522484FA51001F69B6 /* Debug */,
+				2AE2C6532484FA51001F69B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,16 +7,39 @@
 //
 
 #import "ViewController.h"
+@import Lottie;
 
 @interface ViewController ()
-
+@property (nonatomic, weak) CompatibleAnimationView         *animationView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    CompatibleAnimationView *animationView = [[CompatibleAnimationView alloc] initWithFrame:CGRectZero];
+    animationView.loopAnimationCount = 2;
+    animationView.backgroundColor = [UIColor redColor];
+    animationView.center = self.view.center;
+    animationView.contentMode = UIViewContentModeScaleAspectFit;
+    [self.view addSubview:self.animationView = animationView];
+    
+    CompatibleAnimation *animation;
+    animation = [[CompatibleAnimation alloc] initWithName:@"data" bundle:[NSBundle mainBundle]];
+    animationView.compatibleAnimation = animation;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.animationView playWithCompletion:^(BOOL a) {
+        
+    }];
+    
+    for (int i = 0; i < 5; ++i) {
+        [self.animationView play];
+        usleep(0.2 * 1000);
+        NSLog(@"%d", i);
+    }
 }
 
 
