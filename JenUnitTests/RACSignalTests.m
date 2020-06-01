@@ -1,5 +1,5 @@
 //
-//  JenUnitTests.m
+//  RACSignalTests.m
 //  JenUnitTests
 //
 //  Created by lijia on 2020/6/1.
@@ -7,13 +7,13 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <ReactiveObjC/ReactiveObjC.h>
+#import "Frameworks.h"
 
-@interface JenUnitTests : XCTestCase
+@interface RACSignalTests : XCTestCase
 
 @end
 
-@implementation JenUnitTests
+@implementation RACSignalTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -23,13 +23,26 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
 }
 
-- (void)testExample {
+
+///Test Sequence
+- (void)testSequence {
     RACSignal *signal =  @[@1,@2].rac_sequence.signal;
     [signal subscribeNext:^(id  _Nullable x) {
         NSLog(@"%@", x);
     }];
+    
 }
 
+///Test empty
+- (void)testEmpty {
+    RACStream *stream = [RACSignal empty];
+    
+}
+
+///Test return
+- (void)testReturn {
+    
+}
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{

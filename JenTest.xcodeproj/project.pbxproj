@@ -17,7 +17,8 @@
 		2AB29CD5237C150500A1A8CB /* JenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB29CD4237C150500A1A8CB /* JenTest.swift */; };
 		2AB29CD8237C339D00A1A8CB /* pk_dice.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB29CD6237C339C00A1A8CB /* pk_dice.png */; };
 		2AB29CD9237C339D00A1A8CB /* pk_animation_dice.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AB29CD7237C339D00A1A8CB /* pk_animation_dice.json */; };
-		2AE2C64E2484FA51001F69B6 /* JenUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2C64D2484FA51001F69B6 /* JenUnitTests.m */; };
+		2AE2C64E2484FA51001F69B6 /* RACStreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2C64D2484FA51001F69B6 /* RACStreamTests.m */; };
+		2AE2C65C2485043B001F69B6 /* RACSignalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2C65B2485043B001F69B6 /* RACSignalTests.m */; };
 		A4C3EC685392E6B803A774A1 /* libPods-JenUnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C70B28978BB0F88B065E98F /* libPods-JenUnitTests.a */; };
 		E3130270DD13C906DA22DF20 /* libPods-JenTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6369EFDB03F846C5AC974BD /* libPods-JenTest.a */; };
 /* End PBXBuildFile section */
@@ -64,8 +65,10 @@
 		2AB29CD6237C339C00A1A8CB /* pk_dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pk_dice.png; sourceTree = "<group>"; };
 		2AB29CD7237C339D00A1A8CB /* pk_animation_dice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pk_animation_dice.json; sourceTree = "<group>"; };
 		2AE2C64B2484FA51001F69B6 /* JenUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JenUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AE2C64D2484FA51001F69B6 /* JenUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JenUnitTests.m; sourceTree = "<group>"; };
+		2AE2C64D2484FA51001F69B6 /* RACStreamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACStreamTests.m; sourceTree = "<group>"; };
 		2AE2C64F2484FA51001F69B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE2C65B2485043B001F69B6 /* RACSignalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSignalTests.m; sourceTree = "<group>"; };
+		2AE2C65D248505F7001F69B6 /* Frameworks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Frameworks.h; sourceTree = "<group>"; };
 		66C9B285A35B1E13D16D4B87 /* Pods-JenUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenUnitTests.release.xcconfig"; path = "Target Support Files/Pods-JenUnitTests/Pods-JenUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		6C70B28978BB0F88B065E98F /* libPods-JenUnitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JenUnitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		744B639C738A169AA4190B09 /* Pods-JenUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-JenUnitTests/Pods-JenUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +139,9 @@
 		2AE2C64C2484FA51001F69B6 /* JenUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				2AE2C64D2484FA51001F69B6 /* JenUnitTests.m */,
+				2AE2C65D248505F7001F69B6 /* Frameworks.h */,
+				2AE2C64D2484FA51001F69B6 /* RACStreamTests.m */,
+				2AE2C65B2485043B001F69B6 /* RACSignalTests.m */,
 				2AE2C64F2484FA51001F69B6 /* Info.plist */,
 			);
 			path = JenUnitTests;
@@ -345,7 +350,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE2C64E2484FA51001F69B6 /* JenUnitTests.m in Sources */,
+				2AE2C65C2485043B001F69B6 /* RACSignalTests.m in Sources */,
+				2AE2C64E2484FA51001F69B6 /* RACStreamTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
