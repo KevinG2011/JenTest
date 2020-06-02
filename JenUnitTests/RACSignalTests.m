@@ -19,20 +19,26 @@
     @weakify(self)
     self.verifyValues = ^(RACSignal *signal, NSArray *expectedValues) {
         @strongify(self)
+        
+        XCTestExpectation *expectation = [self expectationWithDescription:@"预期结果"];
         NSMutableArray *collectedValues = [NSMutableArray array];
-
+        
         __block BOOL success = NO;
-        __block NSError *error = nil;
+        __block NSError *signalError = nil;
         [signal subscribeNext:^(id value) {
             [collectedValues addObject:value];
         } error:^(NSError *receivedError) {
-            error = receivedError;
+            signalError = receivedError;
         } completed:^{
             success = YES;
+            [expectation fulfill];
         }];
         
-        XCTAssertTrue(success);
-        XCTAssertNil(error);
+        [self waitForExpectationsWithTimeout:1 handler:^(NSError * _Nullable error) {
+            XCTAssertTrue(success);
+            XCTAssertNil(signalError);
+            XCTAssertEqualObjects(collectedValues, expectedValues);
+        }];
     };
 }
 
@@ -40,24 +46,16 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
 }
 
-
-///Test Sequence
-- (void)testSequence {
-    RACSignal *signal =  @[@1,@2].rac_sequence.signal;
-    [signal subscribeNext:^(id  _Nullable x) {
-        NSLog(@"%@", x);
-    }];
-    
-}
-
 ///Test empty
 - (void)testEmpty {
     RACSignal *s = [RACSignal empty];
+    self.verifyValues(s, @[]);
 }
 
 ///Test return
 - (void)testReturn {
     RACSignal *s = [RACSignal return:@2];
+    self.verifyValues(s, @[@2]);
 }
 
 - (void)testZip {
@@ -67,6 +65,7 @@
     
     [s subscribeNext:^(id  _Nullable x) {
         NSLog(@"%@", x);
+        XCTAssertTrue([x isKindOfClass:RACTuple.class]);
     }];
 }
 
@@ -78,7 +77,8 @@
     }];
     
     [s subscribeNext:^(id  _Nullable x) {
-        NSLog(@"%@", x);
+        NSLog(@"============================: %@", x);
+        XCTAssertEqualObjects(x, @"1 2 3");
     }];
 }
 
@@ -88,4 +88,12 @@
     self.verifyValues(s, @[@0, @1]);
 }
 
+- (void)testScanWithStart {
+    RACSequence *numbers = @[ @1, @2, @3, @4 ].rac_sequence;
+    RACSequence *seq = [numbers scanWithStart:@0 reduce:^id _Nullable(NSNumber* running, NSNumber* next) {
+        return @(running.integerValue + next.integerValue);
+    }];
+    self.verifyValues(seq.signal, @[@1, @3, @6, @10]);
+    
+}
 @end
