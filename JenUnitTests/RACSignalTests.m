@@ -20,7 +20,7 @@
     self.verifyValues = ^(RACSignal *signal, NSArray *expectedValues) {
         @strongify(self)
         
-        XCTestExpectation *expectation = [self expectationWithDescription:@"预期结果"];
+        XCTestExpectation *expectation = [self expectationWithDescription:@"符合预期的流状态"];
         NSMutableArray *collectedValues = [NSMutableArray array];
         
         __block BOOL success = NO;
@@ -34,7 +34,7 @@
             [expectation fulfill];
         }];
         
-        [self waitForExpectationsWithTimeout:1 handler:^(NSError * _Nullable error) {
+        [self waitForExpectationsWithTimeout:10 handler:^(NSError * _Nullable error) {
             XCTAssertTrue(success);
             XCTAssertNil(signalError);
             XCTAssertEqualObjects(collectedValues, expectedValues);
@@ -43,12 +43,13 @@
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.verifyValues = nil;
 }
 
 ///Test empty
 - (void)testEmpty {
     RACSignal *s = [RACSignal empty];
+    
     self.verifyValues(s, @[]);
 }
 
@@ -94,6 +95,101 @@
         return @(running.integerValue + next.integerValue);
     }];
     self.verifyValues(seq.signal, @[@1, @3, @6, @10]);
-    
 }
+
+- (void)testTakeWhileBlock {
+    RACSequence *numbers = @[ @1, @2, @3, @4 ].rac_sequence;
+    RACSequence *seq = [numbers takeWhileBlock:^ BOOL (NSNumber *x) {
+        return x.integerValue <= 2;
+    }];
+
+    self.verifyValues(seq.signal, @[ @1, @2 ]);
+}
+
+- (void)testTakeUntilBlock {
+    RACSequence *numbers = @[ @1, @2, @3, @4 ].rac_sequence;
+    RACSequence *seq = [numbers takeUntilBlock:^ BOOL (NSNumber *x) {
+        return x.integerValue > 3;
+    }];
+
+    self.verifyValues(seq.signal, @[ @1, @2, @3 ]);
+}
+
+- (void)testSkipUntilBlock {
+    RACSequence *numbers = @[ @1, @2, @3, @4 ].rac_sequence;
+    RACSequence *seq = [numbers skipUntilBlock:^ BOOL (NSNumber *x) {
+        return x.integerValue > 3;
+    }];
+
+    self.verifyValues(seq.signal, @[ @4 ]);
+}
+
+- (void)testSkipWhileBlock {
+    RACSequence *numbers = @[ @1, @2, @3, @4 ].rac_sequence;
+    RACSequence *seq = [numbers skipWhileBlock:^ BOOL (NSNumber *x) {
+        return x.integerValue > 0;
+    }];
+
+    self.verifyValues(seq.signal, @[]);
+}
+
+- (void)testCreateSignal {
+    RACSignal *s = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@1];
+        [[RACScheduler currentScheduler] afterDelay:0.5 schedule:^{
+            [subscriber sendCompleted];
+        }];
+        return [RACDisposable disposableWithBlock:^{
+            NSLog(@"==================== dispose ==============");
+        }];
+    }];
+    self.verifyValues(s, @[@1]);
+}
+
+- (void)testStartEagerlyWithScheduler {
+    __block NSUInteger count = 0;
+    RACSignal *s = [RACSignal startEagerlyWithScheduler:[RACScheduler currentScheduler] block:^(id<RACSubscriber>  _Nonnull subscriber) {
+        for (id num in @[@1, @2, @3]) {
+            [subscriber sendNext:num];
+        }
+        NSLog(@"==================== :%zd", ++count);
+        [subscriber sendCompleted];
+    }];
+    
+    self.verifyValues(s, @[@1, @2, @3]);
+}
+
+- (void)testStartLazilyWithScheduler {
+    RACSignal *s = [RACSignal startLazilyWithScheduler:[RACScheduler currentScheduler] block:^(id<RACSubscriber>  _Nonnull subscriber) {
+        for (id num in @[@1, @2, @3]) {
+            [subscriber sendNext:num];
+        }
+        [subscriber sendCompleted];
+    }];
+    self.verifyValues(s, @[@1, @2, @3]);
+}
+
+- (void)testConcat {
+    RACSignal *s = [[[RACSignal return:@0] concat:[RACSignal empty]] concat:[RACSignal return:@2]];
+    self.verifyValues(s, @[ @0, @2 ]);
+}
+
+
+- (void)testZipWith {
+    RACSignal *<#signal#> = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:<#value#>];
+        [subscriber sendCompleted];
+        return [RACDisposable disposableWithBlock:^{
+            <#dispose#>
+        }];
+    }];
+    
+    [<#signal#> subscribeNext:^(id  _Nullable x) {
+        
+    } completed:^{
+        
+    }];
+}
+
+
 @end
