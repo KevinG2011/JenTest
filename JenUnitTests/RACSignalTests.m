@@ -176,20 +176,56 @@
 
 
 - (void)testZipWith {
-    RACSignal *<#signal#> = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        [subscriber sendNext:<#value#>];
+    RACSignal *s = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@1];
         [subscriber sendCompleted];
         return [RACDisposable disposableWithBlock:^{
-            <#dispose#>
+            NSLog(@"==================== ");
         }];
     }];
     
-    [<#signal#> subscribeNext:^(id  _Nullable x) {
+    [s subscribeNext:^(id  _Nullable x) {
         
     } completed:^{
         
     }];
 }
 
+- (void)testFlattenMap {
+    RACSignal *s = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@[@1, @2]];
+        [subscriber sendCompleted];
+        return nil;
+    }];
+    s = [s flattenMap:^__kindof RACSignal * _Nullable(id  _Nullable x) {
+        NSLog(@"=========flattenMap =========: %@", x);
+        return [RACSignal return:@3];
+    }];
+    
+    [s subscribeNext:^(id  _Nullable x) {
+        NSLog(@"==================== :%@", x);
+    } completed:^{
+        NSLog(@"========flatten completed=========");
+    }];
+}
+
+- (void)testFlatten {
+    RACSignal *s = [RACSignal return:[RACSignal return:RACUnit.defaultUnit]];
+    s = [s flatten];
+    self.verifyValues(s, @[RACUnit.defaultUnit]);
+}
+
+- (void)testMap {
+    RACSignal *s = [@[@0, @1, @2].rac_sequence.signal map:^id _Nullable(NSNumber *value) {
+        return @(value.integerValue + 1);
+    }];
+    
+    self.verifyValues(s, @[@1,@2,@3]);
+}
+
+- (void)testMapReplace {
+    RACSignal *s = [@[@0, @1, @2].rac_sequence.signal mapReplace:RACUnit.defaultUnit];
+    self.verifyValues(s, @[RACUnit.defaultUnit, RACUnit.defaultUnit, RACUnit.defaultUnit]);
+}
 
 @end
