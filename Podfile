@@ -6,6 +6,7 @@
 platform :ios, '9.0'
 
 def main_project_pods
+    pod 'PromiseKit'
     pod 'lottie-ios'
     pod 'LookinServer', :configurations => ['Debug']
 end
