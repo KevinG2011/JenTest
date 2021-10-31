@@ -61,6 +61,7 @@
 		2A120ABC226F42210084DB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A120ABD226F42210084DB8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A25A72024860A7E00402A55 /* RACRequenceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACRequenceTests.m; sourceTree = "<group>"; };
+		2A68E327272DA4E6004DA5BD /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AB29CCF237C107300A1A8CB /* JenTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JenTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		2AB29CD2237C13DF00A1A8CB /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		2AB29CD4237C150500A1A8CB /* JenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenTest.swift; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 				2A120AAF226F421F0084DB8F /* AppDelegate.m */,
 				2A120AB1226F421F0084DB8F /* ViewController.h */,
 				2A120AB2226F421F0084DB8F /* ViewController.m */,
+				2A68E327272DA4E6004DA5BD /* MyPlayground.playground */,
 				2AB29CD4237C150500A1A8CB /* JenTest.swift */,
 				2A120AB4226F421F0084DB8F /* Main.storyboard */,
 				2A120AB7226F42210084DB8F /* Assets.xcassets */,

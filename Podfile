@@ -6,8 +6,8 @@
 platform :ios, '9.0'
 
 def main_project_pods
-    pod 'PromiseKit'
-    pod 'lottie-ios'
+    pod 'KVOController'
+    pod 'PromisesObjC'
     pod 'LookinServer', :configurations => ['Debug']
 end
 
@@ -17,4 +17,5 @@ end
 
 target "JenUnitTests" do
     pod 'ReactiveObjC'
+    pod 'PromisesObjC'
 end
