@@ -32,6 +32,88 @@ do {
     // 有一个错误消息抛出
 }
 
+
+///闭区间运算符
+for index in 1...5 {
+    print("\(index) * 5 = \(index * 5)")
+}
+
+let names = ["Anna", "Alex", "Brian", "Jack"]
+for name in names[2...] {
+    print(name)
+}
+
+///Array
+var shoppingList = ["Eggs", "Milk"]
+shoppingList[0..<2] = ["Bananas", "Apples"]
+let apples = shoppingList.removeLast()
+for (index, value) in shoppingList.enumerated() {
+    print("Item \(String(index + 1)): \(value)")
+}
+
+///Set
+var favoriteGenres: Set = ["Rock", "Classical", "Hip hop"]
+favoriteGenres.insert("Jazz")
+for genre in favoriteGenres.sorted() {
+    print("\(genre)")
+}
+
+///Dictionary
+var namesOfIntegers: [Int: String] = [:]
+namesOfIntegers[16] = "sixteen"
+var airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+airports["DUB"] = nil
+print(airports.count)
+
+for (key, value) in airports {
+  print("\(key):\(value)");
+}
+
+///控制流
+
+//提前退出
+var i = 0;
+func greet(person: [String: String]) {
+  guard i > 0 else {
+    return
+  }
+}
+
+repeat {
+  print("i = \(i)");
+  i += 1
+} while i < 5
+
+//where条件
+let yetAnotherPoint = (1, -1)
+switch yetAnotherPoint {
+case let (x, y) where x == y:
+    print("(\(x), \(y)) is on the line x == y")
+case let (x, y) where x == -y:
+    print("(\(x), \(y)) is on the line x == -y")
+case let (x, y):
+    print("(\(x), \(y)) is just some arbitrary point")
+}
+// 输出“(1, -1) is on the line x == -y”
+
+//复合型case
+let stillAnotherPoint = (9, 0)
+switch stillAnotherPoint {
+case (let distance, 0), (0, let distance):
+    print("On an axis, \(distance) from the origin")
+default:
+    print("Not on an axis")
+}
+// 输出“On an axis, 9 from the origin”
+
+let finalSquare = 25
+var board = [Int](repeating: 0, count: finalSquare + 1)
+
+//带标签的语句
+//label name: while condition {
+//    statements
+//}
+
 exit(0)
 
 
