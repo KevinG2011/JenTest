@@ -1,4 +1,5 @@
 import UIKit
+import Foundation
 
 /// 基础部分
 
@@ -113,6 +114,39 @@ var board = [Int](repeating: 0, count: finalSquare + 1)
 //label name: while condition {
 //    statements
 //}
+
+///可变参数
+func arithmeticMean(_ numbers: Double...) -> Double {
+    var total: Double = 0
+    for number in numbers {
+        total += number
+    }
+    return total / Double(numbers.count)
+}
+
+///输入输出参数
+
+func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+  let ta = a;
+  a = b;
+  b = ta;
+}
+
+var someInt = 3
+var anotherInt = 107
+swapTwoInts(&someInt, &anotherInt)
+print("\(someInt), \(anotherInt)")
+
+///嵌套函数
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+    func stepForward(input: Int) -> Int { return input + 1 }
+    func stepBackward(input: Int) -> Int { return input - 1 }
+    return backward ? stepBackward : stepForward
+}
+let curval = 8
+chooseStepFunction(backward: curval > 0)(curval)
+
+
 
 exit(0)
 
