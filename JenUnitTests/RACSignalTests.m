@@ -102,7 +102,7 @@
     RACSequence *seq = [numbers takeWhileBlock:^ BOOL (NSNumber *x) {
         return x.integerValue <= 2;
     }];
-
+    
     self.verifyValues(seq.signal, @[ @1, @2 ]);
 }
 
@@ -111,7 +111,7 @@
     RACSequence *seq = [numbers takeUntilBlock:^ BOOL (NSNumber *x) {
         return x.integerValue > 3;
     }];
-
+    
     self.verifyValues(seq.signal, @[ @1, @2, @3 ]);
 }
 
@@ -120,7 +120,7 @@
     RACSequence *seq = [numbers skipUntilBlock:^ BOOL (NSNumber *x) {
         return x.integerValue > 3;
     }];
-
+    
     self.verifyValues(seq.signal, @[ @4 ]);
 }
 
@@ -129,7 +129,7 @@
     RACSequence *seq = [numbers skipWhileBlock:^ BOOL (NSNumber *x) {
         return x.integerValue > 0;
     }];
-
+    
     self.verifyValues(seq.signal, @[]);
 }
 
@@ -228,4 +228,24 @@
     self.verifyValues(s, @[RACUnit.defaultUnit, RACUnit.defaultUnit, RACUnit.defaultUnit]);
 }
 
+- (void)testReplay {
+    @weakify(self)
+    [[[[[NSNotificationCenter defaultCenter]
+       rac_addObserverForName:@"RACSignalReplayTest" object:nil] replay]
+      takeUntil:self.rac_willDeallocSignal]]
+     subscribeNext:^(NSNotification *x) {
+        NSLog(@"==================== :%@", x.object);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"RACSignalReplayTest" object:@1];
+    
+    [[[[[NSNotificationCenter defaultCenter]
+       rac_addObserverForName:@"RACSignalReplayTest" object:nil] replay]
+      takeUntil:self.rac_willDeallocSignal]
+     subscribeNext:^(NSNotification *x) {
+        NSLog(@"==================== :%@", x.object);
+    }];
+    
+    sleep(10);
+}
 @end

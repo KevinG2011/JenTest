@@ -8,16 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2A120AB0226F421F0084DB8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A120AAF226F421F0084DB8F /* AppDelegate.m */; };
-		2A120AB3226F421F0084DB8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A120AB2226F421F0084DB8F /* ViewController.m */; };
+		2A120AB3226F421F0084DB8F /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A120AB2226F421F0084DB8F /* ViewController.mm */; };
 		2A120AB6226F421F0084DB8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A120AB4226F421F0084DB8F /* Main.storyboard */; };
 		2A120AB8226F42210084DB8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A120AB7226F42210084DB8F /* Assets.xcassets */; };
 		2A120ABB226F42210084DB8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A120AB9226F42210084DB8F /* LaunchScreen.storyboard */; };
 		2A120ABE226F42210084DB8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A120ABD226F42210084DB8F /* main.m */; };
 		2A25A72124860A7E00402A55 /* RACRequenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A25A72024860A7E00402A55 /* RACRequenceTests.m */; };
-		2AB29CD3237C13DF00A1A8CB /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AB29CD2237C13DF00A1A8CB /* data.json */; };
+		2A43A1A426E8DF9F003F618A /* filedata.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A43A1A326E8DF9F003F618A /* filedata.xcassets */; };
+		2A84313726E795A400A6F209 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A84313626E7958A00A6F209 /* libc++.tbd */; };
+		2A9B499126F0456100505E3A /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B498F26F0456100505E3A /* NSString+Ext.m */; };
+		2A9B499426F045E600505E3A /* NSDictionary+HJBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B499326F045E600505E3A /* NSDictionary+HJBlocks.m */; };
+		2A9B499A26F046C100505E3A /* NSArray+HJBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B499926F046C100505E3A /* NSArray+HJBlocks.m */; };
 		2AB29CD5237C150500A1A8CB /* JenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB29CD4237C150500A1A8CB /* JenTest.swift */; };
-		2AB29CD8237C339D00A1A8CB /* pk_dice.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB29CD6237C339C00A1A8CB /* pk_dice.png */; };
-		2AB29CD9237C339D00A1A8CB /* pk_animation_dice.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AB29CD7237C339D00A1A8CB /* pk_animation_dice.json */; };
+		2AB8AC9227211B020051C134 /* PrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB8AC9127211B020051C134 /* PrintViewController.m */; };
+		2AB8AC962721349B0051C134 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB8AC952721349B0051C134 /* icon.png */; };
+		2ADB676E26EB474600173E1B /* HJLOTVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB676D26EB474600173E1B /* HJLOTVendor.m */; };
+		2ADF245F27114337008B817C /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF245D27114337008B817C /* UIColor+Hex.m */; };
 		2AE2C64E2484FA51001F69B6 /* RACStreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2C64D2484FA51001F69B6 /* RACStreamTests.m */; };
 		2AE2C65C2485043B001F69B6 /* RACSignalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2C65B2485043B001F69B6 /* RACSignalTests.m */; };
 		A4C3EC685392E6B803A774A1 /* libPods-JenUnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C70B28978BB0F88B065E98F /* libPods-JenUnitTests.a */; };
@@ -54,7 +60,7 @@
 		2A120AAE226F421F0084DB8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A120AAF226F421F0084DB8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2A120AB1226F421F0084DB8F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2A120AB2226F421F0084DB8F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2A120AB2226F421F0084DB8F /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		2A120AB5226F421F0084DB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A120AB7226F42210084DB8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A120ABA226F42210084DB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,11 +68,24 @@
 		2A120ABD226F42210084DB8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A25A72024860A7E00402A55 /* RACRequenceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACRequenceTests.m; sourceTree = "<group>"; };
 		2A68E327272DA4E6004DA5BD /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2A43A1A326E8DF9F003F618A /* filedata.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = filedata.xcassets; sourceTree = "<group>"; };
+		2A84313626E7958A00A6F209 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		2A84313826E795AA00A6F209 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		2A9B498F26F0456100505E3A /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
+		2A9B499026F0456100505E3A /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
+		2A9B499226F045E600505E3A /* NSDictionary+HJBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HJBlocks.h"; sourceTree = "<group>"; };
+		2A9B499326F045E600505E3A /* NSDictionary+HJBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HJBlocks.m"; sourceTree = "<group>"; };
+		2A9B499826F046C100505E3A /* NSArray+HJBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HJBlocks.h"; sourceTree = "<group>"; };
+		2A9B499926F046C100505E3A /* NSArray+HJBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HJBlocks.m"; sourceTree = "<group>"; };
 		2AB29CCF237C107300A1A8CB /* JenTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JenTest-Bridging-Header.h"; sourceTree = "<group>"; };
-		2AB29CD2237C13DF00A1A8CB /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		2AB29CD4237C150500A1A8CB /* JenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenTest.swift; sourceTree = "<group>"; };
-		2AB29CD6237C339C00A1A8CB /* pk_dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pk_dice.png; sourceTree = "<group>"; };
-		2AB29CD7237C339D00A1A8CB /* pk_animation_dice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pk_animation_dice.json; sourceTree = "<group>"; };
+		2AB8AC9027211B020051C134 /* PrintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintViewController.h; sourceTree = "<group>"; };
+		2AB8AC9127211B020051C134 /* PrintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
+		2AB8AC952721349B0051C134 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2ADB676C26EB474600173E1B /* HJLOTVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJLOTVendor.h; sourceTree = "<group>"; };
+		2ADB676D26EB474600173E1B /* HJLOTVendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJLOTVendor.m; sourceTree = "<group>"; };
+		2ADF245D27114337008B817C /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		2ADF245E27114337008B817C /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		2AE2C64B2484FA51001F69B6 /* JenUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JenUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE2C64D2484FA51001F69B6 /* RACStreamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACStreamTests.m; sourceTree = "<group>"; };
 		2AE2C64F2484FA51001F69B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A84313726E795A400A6F209 /* libc++.tbd in Frameworks */,
 				E3130270DD13C906DA22DF20 /* libPods-JenTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				2A120AAD226F421F0084DB8F /* JenTest */,
+				2ADB66C926EA1BC000173E1B /* Resources */,
 				2AE2C64C2484FA51001F69B6 /* JenUnitTests */,
 				2A120AAC226F421F0084DB8F /* Products */,
 				838E0235D5B6415EF5B6D817 /* Pods */,
@@ -121,23 +142,65 @@
 		2A120AAD226F421F0084DB8F /* JenTest */ = {
 			isa = PBXGroup;
 			children = (
-				2AB29CD2237C13DF00A1A8CB /* data.json */,
-				2AB29CD7237C339D00A1A8CB /* pk_animation_dice.json */,
-				2AB29CD6237C339C00A1A8CB /* pk_dice.png */,
+				2A84313926E795D000A6F209 /* HJFrameworks */,
+				2ADB676B26EB474600173E1B /* Lottie */,
+				2A9B498E26F0455100505E3A /* Category */,
 				2A120AAE226F421F0084DB8F /* AppDelegate.h */,
 				2A120AAF226F421F0084DB8F /* AppDelegate.m */,
 				2A120AB1226F421F0084DB8F /* ViewController.h */,
-				2A120AB2226F421F0084DB8F /* ViewController.m */,
 				2A68E327272DA4E6004DA5BD /* MyPlayground.playground */,
+				2A120AB2226F421F0084DB8F /* ViewController.mm */,
+				2AB8AC9027211B020051C134 /* PrintViewController.h */,
+				2AB8AC9127211B020051C134 /* PrintViewController.m */,
 				2AB29CD4237C150500A1A8CB /* JenTest.swift */,
 				2A120AB4226F421F0084DB8F /* Main.storyboard */,
 				2A120AB7226F42210084DB8F /* Assets.xcassets */,
+				2A43A1A326E8DF9F003F618A /* filedata.xcassets */,
 				2A120AB9226F42210084DB8F /* LaunchScreen.storyboard */,
 				2A120ABC226F42210084DB8F /* Info.plist */,
 				2A120ABD226F42210084DB8F /* main.m */,
 				2AB29CCF237C107300A1A8CB /* JenTest-Bridging-Header.h */,
 			);
 			path = JenTest;
+			sourceTree = "<group>";
+		};
+		2A84313926E795D000A6F209 /* HJFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HJFrameworks;
+			sourceTree = "<group>";
+		};
+		2A9B498E26F0455100505E3A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF245E27114337008B817C /* UIColor+Hex.h */,
+				2ADF245D27114337008B817C /* UIColor+Hex.m */,
+				2A9B499226F045E600505E3A /* NSDictionary+HJBlocks.h */,
+				2A9B499326F045E600505E3A /* NSDictionary+HJBlocks.m */,
+				2A9B499826F046C100505E3A /* NSArray+HJBlocks.h */,
+				2A9B499926F046C100505E3A /* NSArray+HJBlocks.m */,
+				2A9B499026F0456100505E3A /* NSString+Ext.h */,
+				2A9B498F26F0456100505E3A /* NSString+Ext.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2ADB66C926EA1BC000173E1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2AB8AC952721349B0051C134 /* icon.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2ADB676B26EB474600173E1B /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				2ADB676C26EB474600173E1B /* HJLOTVendor.h */,
+				2ADB676D26EB474600173E1B /* HJLOTVendor.m */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		2AE2C64C2484FA51001F69B6 /* JenUnitTests */ = {
@@ -166,6 +229,8 @@
 		E02DF2A16FCBCEED239E09D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A84313826E795AA00A6F209 /* libc++abi.tbd */,
+				2A84313626E7958A00A6F209 /* libc++.tbd */,
 				A6369EFDB03F846C5AC974BD /* libPods-JenTest.a */,
 				6C70B28978BB0F88B065E98F /* libPods-JenUnitTests.a */,
 			);
@@ -256,12 +321,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB29CD9237C339D00A1A8CB /* pk_animation_dice.json in Resources */,
-				2AB29CD8237C339D00A1A8CB /* pk_dice.png in Resources */,
+				2AB8AC962721349B0051C134 /* icon.png in Resources */,
 				2A120ABB226F42210084DB8F /* LaunchScreen.storyboard in Resources */,
+				2A43A1A426E8DF9F003F618A /* filedata.xcassets in Resources */,
 				2A120AB8226F42210084DB8F /* Assets.xcassets in Resources */,
 				2A120AB6226F421F0084DB8F /* Main.storyboard in Resources */,
-				2AB29CD3237C13DF00A1A8CB /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +390,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A120AB3226F421F0084DB8F /* ViewController.m in Sources */,
+				2AB8AC9227211B020051C134 /* PrintViewController.m in Sources */,
+				2A9B499A26F046C100505E3A /* NSArray+HJBlocks.m in Sources */,
+				2A120AB3226F421F0084DB8F /* ViewController.mm in Sources */,
+				2A9B499426F045E600505E3A /* NSDictionary+HJBlocks.m in Sources */,
 				2AB29CD5237C150500A1A8CB /* JenTest.swift in Sources */,
+				2ADF245F27114337008B817C /* UIColor+Hex.m in Sources */,
+				2ADB676E26EB474600173E1B /* HJLOTVendor.m in Sources */,
+				2A9B499126F0456100505E3A /* NSString+Ext.m in Sources */,
 				2A120ABE226F42210084DB8F /* main.m in Sources */,
 				2A120AB0226F421F0084DB8F /* AppDelegate.m in Sources */,
 			);
@@ -497,7 +567,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48E3LB8PD7;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JenTest/HJFrameworks",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = JenTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -506,6 +579,10 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huajiao.jenkinsTest.JenTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -526,7 +603,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48E3LB8PD7;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JenTest/HJFrameworks",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = JenTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -535,6 +615,10 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huajiao.jenkinsTest.JenTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -553,7 +637,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48E3LB8PD7;
 				INFOPLIST_FILE = JenUnitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,7 +659,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48E3LB8PD7;
 				INFOPLIST_FILE = JenUnitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
