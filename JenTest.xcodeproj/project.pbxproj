@@ -22,7 +22,6 @@
 		2AB29CD5237C150500A1A8CB /* JenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB29CD4237C150500A1A8CB /* JenTest.swift */; };
 		2AB8AC9227211B020051C134 /* PrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB8AC9127211B020051C134 /* PrintViewController.m */; };
 		2AB8AC962721349B0051C134 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB8AC952721349B0051C134 /* icon.png */; };
-		2ADB676E26EB474600173E1B /* HJLOTVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB676D26EB474600173E1B /* HJLOTVendor.m */; };
 		2ADF245F27114337008B817C /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF245D27114337008B817C /* UIColor+Hex.m */; };
 		2AE2C64E2484FA51001F69B6 /* RACStreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2C64D2484FA51001F69B6 /* RACStreamTests.m */; };
 		2AE2C65C2485043B001F69B6 /* RACSignalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2C65B2485043B001F69B6 /* RACSignalTests.m */; };
@@ -84,8 +83,6 @@
 		2AB8AC9027211B020051C134 /* PrintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintViewController.h; sourceTree = "<group>"; };
 		2AB8AC9127211B020051C134 /* PrintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
 		2AB8AC952721349B0051C134 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		2ADB676C26EB474600173E1B /* HJLOTVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJLOTVendor.h; sourceTree = "<group>"; };
-		2ADB676D26EB474600173E1B /* HJLOTVendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJLOTVendor.m; sourceTree = "<group>"; };
 		2ADF245D27114337008B817C /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		2ADF245E27114337008B817C /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		2AE2C64B2484FA51001F69B6 /* JenUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JenUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +143,6 @@
 			children = (
 				2A6A2D6E2730E86F00E4FEDA /* Playground */,
 				2A84313926E795D000A6F209 /* HJFrameworks */,
-				2ADB676B26EB474600173E1B /* Lottie */,
 				2A9B498E26F0455100505E3A /* Category */,
 				2A120AAE226F421F0084DB8F /* AppDelegate.h */,
 				2A120AAF226F421F0084DB8F /* AppDelegate.m */,
@@ -204,15 +200,6 @@
 				2AB8AC952721349B0051C134 /* icon.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		2ADB676B26EB474600173E1B /* Lottie */ = {
-			isa = PBXGroup;
-			children = (
-				2ADB676C26EB474600173E1B /* HJLOTVendor.h */,
-				2ADB676D26EB474600173E1B /* HJLOTVendor.m */,
-			);
-			path = Lottie;
 			sourceTree = "<group>";
 		};
 		2AE2C64C2484FA51001F69B6 /* JenUnitTests */ = {
@@ -408,7 +395,6 @@
 				2A9B499426F045E600505E3A /* NSDictionary+HJBlocks.m in Sources */,
 				2AB29CD5237C150500A1A8CB /* JenTest.swift in Sources */,
 				2ADF245F27114337008B817C /* UIColor+Hex.m in Sources */,
-				2ADB676E26EB474600173E1B /* HJLOTVendor.m in Sources */,
 				2A9B499126F0456100505E3A /* NSString+Ext.m in Sources */,
 				2A120ABE226F42210084DB8F /* main.m in Sources */,
 				2A120AB0226F421F0084DB8F /* AppDelegate.m in Sources */,
