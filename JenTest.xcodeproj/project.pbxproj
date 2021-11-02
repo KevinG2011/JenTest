@@ -67,8 +67,10 @@
 		2A120ABC226F42210084DB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A120ABD226F42210084DB8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A25A72024860A7E00402A55 /* RACRequenceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACRequenceTests.m; sourceTree = "<group>"; };
-		2A68E327272DA4E6004DA5BD /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2A43A1A326E8DF9F003F618A /* filedata.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = filedata.xcassets; sourceTree = "<group>"; };
+		2A68E327272DA4E6004DA5BD /* Basic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Basic.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2A6A2D6D2730E82F00E4FEDA /* Closure.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closure.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2A6A2D6F273121BD00E4FEDA /* Enum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2A84313626E7958A00A6F209 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		2A84313826E795AA00A6F209 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		2A9B498F26F0456100505E3A /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
@@ -142,13 +144,13 @@
 		2A120AAD226F421F0084DB8F /* JenTest */ = {
 			isa = PBXGroup;
 			children = (
+				2A6A2D6E2730E86F00E4FEDA /* Playground */,
 				2A84313926E795D000A6F209 /* HJFrameworks */,
 				2ADB676B26EB474600173E1B /* Lottie */,
 				2A9B498E26F0455100505E3A /* Category */,
 				2A120AAE226F421F0084DB8F /* AppDelegate.h */,
 				2A120AAF226F421F0084DB8F /* AppDelegate.m */,
 				2A120AB1226F421F0084DB8F /* ViewController.h */,
-				2A68E327272DA4E6004DA5BD /* MyPlayground.playground */,
 				2A120AB2226F421F0084DB8F /* ViewController.mm */,
 				2AB8AC9027211B020051C134 /* PrintViewController.h */,
 				2AB8AC9127211B020051C134 /* PrintViewController.m */,
@@ -162,6 +164,16 @@
 				2AB29CCF237C107300A1A8CB /* JenTest-Bridging-Header.h */,
 			);
 			path = JenTest;
+			sourceTree = "<group>";
+		};
+		2A6A2D6E2730E86F00E4FEDA /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				2A68E327272DA4E6004DA5BD /* Basic.playground */,
+				2A6A2D6D2730E82F00E4FEDA /* Closure.playground */,
+				2A6A2D6F273121BD00E4FEDA /* Enum.playground */,
+			);
+			path = Playground;
 			sourceTree = "<group>";
 		};
 		2A84313926E795D000A6F209 /* HJFrameworks */ = {

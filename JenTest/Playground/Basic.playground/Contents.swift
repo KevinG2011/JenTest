@@ -23,7 +23,7 @@ let forcedString: String = possibleString! // 需要感叹号来获取值
 let assumedString: String! = "An implicitly unwrapped optional string."
 let implicitString: String = assumedString  // 不需要感叹号
 
-///错误处理
+/// 错误处理
 func canThrowAnError() throws {}
 
 do {
@@ -32,7 +32,6 @@ do {
 } catch {
     // 有一个错误消息抛出
 }
-
 
 ///闭区间运算符
 for index in 1...5 {
@@ -70,8 +69,7 @@ for (key, value) in airports {
   print("\(key):\(value)");
 }
 
-///控制流
-
+/// 控制流
 //提前退出
 var i = 0;
 func greet(person: [String: String]) {
@@ -148,8 +146,15 @@ chooseStepFunction(backward: curval > 0)(curval)
 
 
 
-exit(0)
 
+
+
+
+
+
+
+
+exit(0)
 
 enum ServerResponse {
     case result(String, String)
