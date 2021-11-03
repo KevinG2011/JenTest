@@ -80,6 +80,7 @@
 		2A9B499926F046C100505E3A /* NSArray+HJBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HJBlocks.m"; sourceTree = "<group>"; };
 		2AB29CCF237C107300A1A8CB /* JenTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JenTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		2AB29CD4237C150500A1A8CB /* JenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenTest.swift; sourceTree = "<group>"; };
+		2AB85D4B273235D2003516C7 /* Class.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Class.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AB8AC9027211B020051C134 /* PrintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintViewController.h; sourceTree = "<group>"; };
 		2AB8AC9127211B020051C134 /* PrintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
 		2AB8AC952721349B0051C134 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -168,6 +169,7 @@
 				2A68E327272DA4E6004DA5BD /* Basic.playground */,
 				2A6A2D6D2730E82F00E4FEDA /* Closure.playground */,
 				2A6A2D6F273121BD00E4FEDA /* Enum.playground */,
+				2AB85D4B273235D2003516C7 /* Class.playground */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
