@@ -147,3 +147,36 @@ leftChannel.currentLevel = 7
 print(AudioChannel.maxInputLevelForAllChannels)
 rightChannel.currentLevel = 11
 print(AudioChannel.maxInputLevelForAllChannels)
+
+///重写属性观察器
+class Vehicle {
+    var currentSpeed = 0.0
+    var description: String {
+        return "traveling at \(currentSpeed) miles per hour"
+    }
+    func makeNoise() {}
+}
+
+class Car: Vehicle {
+    var gear = 1
+    override var description: String {
+        return super.description + " in gear \(gear)"
+    }
+}
+
+///防止集成或重写
+final class AutomaticCar: Car {
+    override var currentSpeed: Double {
+        didSet {
+            gear = Int(currentSpeed / 10.0) + 1
+        }
+    }
+    final var autoDrive = true
+}
+
+let automatic = AutomaticCar()
+automatic.currentSpeed = 35.0
+print("AutomaticCar: \(automatic.description)")
+
+
+
