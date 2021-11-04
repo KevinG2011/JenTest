@@ -84,6 +84,7 @@
 		2AB8AC9027211B020051C134 /* PrintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintViewController.h; sourceTree = "<group>"; };
 		2AB8AC9127211B020051C134 /* PrintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
 		2AB8AC952721349B0051C134 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2AD989D92733870900FF3942 /* Initialization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Initialization.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2ADF245D27114337008B817C /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		2ADF245E27114337008B817C /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		2AE2C64B2484FA51001F69B6 /* JenUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JenUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +171,7 @@
 				2A6A2D6D2730E82F00E4FEDA /* Closure.playground */,
 				2A6A2D6F273121BD00E4FEDA /* Enum.playground */,
 				2AB85D4B273235D2003516C7 /* Class.playground */,
+				2AD989D92733870900FF3942 /* Initialization.playground */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
