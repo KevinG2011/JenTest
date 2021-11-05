@@ -188,31 +188,13 @@ enum Planet: Int {
 let mars = Planet[4]
 print(mars)
 
+///类型转换
+//Any & AnyObject
+//Any 可以表示任何类型，包括函数类型。
+//AnyObject 可以表示任何类类型的实例。
+let optionalNumber: Int? = 3
+var things: [Any] = []
+things.append(optionalNumber)
+things.append(optionalNumber as Any)
 
 
-
-
-
-exit(0)
-
-enum ServerResponse {
-    case result(String, String)
-    case failure(String)
-}
-
-let success = ServerResponse.result("6:00 am", "8:09 pm")
-let failure = ServerResponse.failure("Out of cheese.")
-
-switch success {
-case let .result(sunrise, sunset):
-    print("Sunrise is at \(sunrise) and sunset is at \(sunset)")
-case let .failure(message):
-    print("Failure...  \(message)")
-}
-
-switch failure {
-case let .result(sunrise, sunset):
-  print("\(sunrise), \(sunset)")
-case let .failure(message):
-  print("Failure... \(message)")
-}

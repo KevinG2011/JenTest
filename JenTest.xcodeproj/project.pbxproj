@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -85,6 +85,9 @@
 		2AB8AC9127211B020051C134 /* PrintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
 		2AB8AC952721349B0051C134 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		2AD989D92733870900FF3942 /* Initialization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Initialization.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2AD989DC2734D1E700FF3942 /* Exception.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Exception.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2AD989DD2734E43B00FF3942 /* Concurrency.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Concurrency.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2AD989DE2735271C00FF3942 /* Extension.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Extension.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2ADF245D27114337008B817C /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		2ADF245E27114337008B817C /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		2AE2C64B2484FA51001F69B6 /* JenUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JenUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +175,9 @@
 				2A6A2D6F273121BD00E4FEDA /* Enum.playground */,
 				2AB85D4B273235D2003516C7 /* Class.playground */,
 				2AD989D92733870900FF3942 /* Initialization.playground */,
+				2AD989DC2734D1E700FF3942 /* Exception.playground */,
+				2AD989DD2734E43B00FF3942 /* Concurrency.playground */,
+				2AD989DE2735271C00FF3942 /* Extension.playground */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				2A120AA8226F421F0084DB8F /* Frameworks */,
 				2A120AA9226F421F0084DB8F /* Resources */,
 				2AC5958A2270225800A6676D /* Embed Frameworks */,
+				831CC028DE77F574737272B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,6 +349,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		831CC028DE77F574737272B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JenTest/Pods-JenTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JenTest/Pods-JenTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JenTest/Pods-JenTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ACB1E44A13D9229EA393490F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -497,7 +521,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -551,7 +575,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
