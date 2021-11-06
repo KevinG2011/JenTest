@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -55,6 +55,7 @@
 /* Begin PBXFileReference section */
 		1C6427A10D4DC6503515AFD9 /* Pods-JenTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenTest.release.xcconfig"; path = "Target Support Files/Pods-JenTest/Pods-JenTest.release.xcconfig"; sourceTree = "<group>"; };
 		23A88EEF7A21D891E820C2E7 /* Pods-JenTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenTest.debug.xcconfig"; path = "Target Support Files/Pods-JenTest/Pods-JenTest.debug.xcconfig"; sourceTree = "<group>"; };
+		2A0D3E1027366D2200C169F0 /* ARC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ARC.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2A120AAB226F421F0084DB8F /* JenTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A120AAE226F421F0084DB8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A120AAF226F421F0084DB8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -178,6 +179,7 @@
 				2AD989DC2734D1E700FF3942 /* Exception.playground */,
 				2AD989DD2734E43B00FF3942 /* Concurrency.playground */,
 				2AD989DE2735271C00FF3942 /* Extension.playground */,
+				2A0D3E1027366D2200C169F0 /* ARC.playground */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -258,7 +260,6 @@
 				2A120AA8226F421F0084DB8F /* Frameworks */,
 				2A120AA9226F421F0084DB8F /* Resources */,
 				2AC5958A2270225800A6676D /* Embed Frameworks */,
-				831CC028DE77F574737272B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,23 +350,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		831CC028DE77F574737272B3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JenTest/Pods-JenTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JenTest/Pods-JenTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JenTest/Pods-JenTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		ACB1E44A13D9229EA393490F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
