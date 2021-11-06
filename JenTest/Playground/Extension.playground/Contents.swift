@@ -162,3 +162,105 @@ func wishHappyBirthday(to celebrator: Named & Aged) { //协议组合
 let birthdayPerson = Person(name: "Malcolm", age: 21)
 wishHappyBirthday(to: birthdayPerson)
 
+///泛型
+func findIndex<T: Equatable>(of valueToFind: T, in array:[T]) -> Int? {
+    for (index, value) in array.enumerated() {
+        if value == valueToFind {
+            return index
+        }
+    }
+    return nil
+}
+
+//关联类型实践
+protocol Container {
+    associatedtype Item //添加约束
+    mutating func append(_ item: Item)
+    var count: Int { get }
+    subscript(i: Int) -> Item { get }
+}
+
+extension Array: Container {}
+
+struct Stack<Element>: Container {
+    // Stack<Element> 的原始实现部分
+    var items: [Element] = []
+    mutating func push(_ item: Element) {
+        items.append(item)
+    }
+    mutating func pop() -> Element {
+        return items.removeLast()
+    }
+    // Container 协议的实现部分
+    mutating func append(_ item: Element) {
+        self.push(item)
+    }
+    var count: Int {
+        return items.count
+    }
+    subscript(i: Int) -> Element {
+        return items[i]
+    }
+}
+
+//泛型 Where 语句
+func allItemsMatch<C1: Container, C2: Container>
+    (_ someContainer: C1, _ anotherContainer: C2) -> Bool
+    where C1.Item == C2.Item, C1.Item: Equatable {
+
+        // 检查两个容器含有相同数量的元素
+        if someContainer.count != anotherContainer.count {
+            return false
+        }
+
+        // 检查每一对元素是否相等
+        for i in 0..<someContainer.count {
+            if someContainer[i] != anotherContainer[i] {
+                return false
+            }
+        }
+
+        // 所有元素都匹配，返回 true
+        return true
+}
+
+//具有泛型 Where 子句的扩展
+extension Container where Item: Equatable {
+  func startsWith(_ item: Item) -> Bool {
+    return count >= 1 && self[0] == item
+  }
+}
+
+//包含上下文关系的 where 分句
+extension Container {
+    func average() -> Double where Item == Int { //当Item是整型时
+        var sum = 0.0
+        for index in 0..<count {
+            sum += Double(self[index])
+        }
+        return sum / Double(count)
+    }
+    func endsWith(_ item: Item) -> Bool where Item: Equatable { //当Item可以==
+        return count >= 1 && self[count-1] == item
+    }
+}
+
+let numbers = [1260, 1200, 98, 37]
+print(numbers.average())
+print(numbers.endsWith(37))
+
+//继承协议约束
+protocol ComparableContainer: Container where Item: Comparable { }
+
+///泛型下标
+extension Container {
+    subscript<Indices: Sequence>(indices: Indices) -> [Item]
+        where Indices.Iterator.Element == Int {
+            var result: [Item] = []
+            for index in indices {
+                result.append(self[index])
+            }
+            return result
+    }
+}
+

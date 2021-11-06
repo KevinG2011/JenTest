@@ -74,3 +74,10 @@ struct Chessboard {
         return boardColors[(row * 8) + column]
     }
 }
+
+let arr = NSMutableArray()
+class House {
+  var tables: NSMutableArray?
+}
+let house = House()
+arr.addObjects(from: house.tables as! [Any])
