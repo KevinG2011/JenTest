@@ -85,6 +85,7 @@
 		2AB8AC9027211B020051C134 /* PrintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintViewController.h; sourceTree = "<group>"; };
 		2AB8AC9127211B020051C134 /* PrintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
 		2AB8AC952721349B0051C134 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2AC86EE7273A278C00ED9393 /* Exercise01.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Exercise01.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AD989D92733870900FF3942 /* Initialization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Initialization.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AD989DC2734D1E700FF3942 /* Exception.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Exception.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AD989DD2734E43B00FF3942 /* Concurrency.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Concurrency.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -180,6 +181,7 @@
 				2AD989DD2734E43B00FF3942 /* Concurrency.playground */,
 				2AD989DE2735271C00FF3942 /* Extension.playground */,
 				2A0D3E1027366D2200C169F0 /* ARC.playground */,
+				2AC86EE7273A278C00ED9393 /* Exercise01.playground */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
