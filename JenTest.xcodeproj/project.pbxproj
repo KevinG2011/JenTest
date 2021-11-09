@@ -22,6 +22,10 @@
 		2AB29CD5237C150500A1A8CB /* JenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB29CD4237C150500A1A8CB /* JenTest.swift */; };
 		2AB8AC9227211B020051C134 /* PrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB8AC9127211B020051C134 /* PrintViewController.m */; };
 		2AB8AC962721349B0051C134 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB8AC952721349B0051C134 /* icon.png */; };
+		2AC86EEA273A67F500ED9393 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86EE9273A67F500ED9393 /* ContentView.swift */; };
+		2AC86EEC273A680E00ED9393 /* QuadTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86EEB273A680E00ED9393 /* QuadTree.swift */; };
+		2AC86EEE273A681F00ED9393 /* QuadTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86EED273A681F00ED9393 /* QuadTreeView.swift */; };
+		2AC86EF0273A682900ED9393 /* QuadTreeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86EEF273A682900ED9393 /* QuadTreeViewModel.swift */; };
 		2ADF245F27114337008B817C /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF245D27114337008B817C /* UIColor+Hex.m */; };
 		2AE2C64E2484FA51001F69B6 /* RACStreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2C64D2484FA51001F69B6 /* RACStreamTests.m */; };
 		2AE2C65C2485043B001F69B6 /* RACSignalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2C65B2485043B001F69B6 /* RACSignalTests.m */; };
@@ -86,6 +90,10 @@
 		2AB8AC9127211B020051C134 /* PrintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
 		2AB8AC952721349B0051C134 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		2AC86EE7273A278C00ED9393 /* Exercise01.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Exercise01.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2AC86EE9273A67F500ED9393 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AC86EEB273A680E00ED9393 /* QuadTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadTree.swift; sourceTree = "<group>"; };
+		2AC86EED273A681F00ED9393 /* QuadTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadTreeView.swift; sourceTree = "<group>"; };
+		2AC86EEF273A682900ED9393 /* QuadTreeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadTreeViewModel.swift; sourceTree = "<group>"; };
 		2AD989D92733870900FF3942 /* Initialization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Initialization.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AD989DC2734D1E700FF3942 /* Exception.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Exception.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AD989DD2734E43B00FF3942 /* Concurrency.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Concurrency.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -149,8 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				2A6A2D6E2730E86F00E4FEDA /* Playground */,
-				2A84313926E795D000A6F209 /* HJFrameworks */,
 				2A9B498E26F0455100505E3A /* Category */,
+				2AC86EE8273A67BB00ED9393 /* QuadTree */,
 				2A120AAE226F421F0084DB8F /* AppDelegate.h */,
 				2A120AAF226F421F0084DB8F /* AppDelegate.m */,
 				2A120AB1226F421F0084DB8F /* ViewController.h */,
@@ -186,13 +194,6 @@
 			path = Playground;
 			sourceTree = "<group>";
 		};
-		2A84313926E795D000A6F209 /* HJFrameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HJFrameworks;
-			sourceTree = "<group>";
-		};
 		2A9B498E26F0455100505E3A /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +207,17 @@
 				2A9B498F26F0456100505E3A /* NSString+Ext.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		2AC86EE8273A67BB00ED9393 /* QuadTree */ = {
+			isa = PBXGroup;
+			children = (
+				2AC86EE9273A67F500ED9393 /* ContentView.swift */,
+				2AC86EEB273A680E00ED9393 /* QuadTree.swift */,
+				2AC86EED273A681F00ED9393 /* QuadTreeView.swift */,
+				2AC86EEF273A682900ED9393 /* QuadTreeViewModel.swift */,
+			);
+			path = QuadTree;
 			sourceTree = "<group>";
 		};
 		2ADB66C926EA1BC000173E1B /* Resources */ = {
@@ -405,13 +417,17 @@
 			files = (
 				2AB8AC9227211B020051C134 /* PrintViewController.m in Sources */,
 				2A9B499A26F046C100505E3A /* NSArray+HJBlocks.m in Sources */,
+				2AC86EF0273A682900ED9393 /* QuadTreeViewModel.swift in Sources */,
 				2A120AB3226F421F0084DB8F /* ViewController.mm in Sources */,
 				2A9B499426F045E600505E3A /* NSDictionary+HJBlocks.m in Sources */,
+				2AC86EEC273A680E00ED9393 /* QuadTree.swift in Sources */,
 				2AB29CD5237C150500A1A8CB /* JenTest.swift in Sources */,
 				2ADF245F27114337008B817C /* UIColor+Hex.m in Sources */,
+				2AC86EEA273A67F500ED9393 /* ContentView.swift in Sources */,
 				2A9B499126F0456100505E3A /* NSString+Ext.m in Sources */,
 				2A120ABE226F42210084DB8F /* main.m in Sources */,
 				2A120AB0226F421F0084DB8F /* AppDelegate.m in Sources */,
+				2AC86EEE273A681F00ED9393 /* QuadTreeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
