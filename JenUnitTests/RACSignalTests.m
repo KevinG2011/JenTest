@@ -229,10 +229,9 @@
 }
 
 - (void)testReplay {
-    @weakify(self)
     [[[[[NSNotificationCenter defaultCenter]
        rac_addObserverForName:@"RACSignalReplayTest" object:nil] replay]
-      takeUntil:self.rac_willDeallocSignal]]
+      takeUntil:self.rac_willDeallocSignal]
      subscribeNext:^(NSNotification *x) {
         NSLog(@"==================== :%@", x.object);
     }];

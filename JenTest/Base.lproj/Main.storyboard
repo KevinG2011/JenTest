@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xgf-yg-TAT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="JenTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,28 +24,14 @@
                                     <constraint firstAttribute="width" secondItem="KJE-8J-jRB" secondAttribute="height" multiplier="1:1" id="pcs-QU-4YF"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6K-SO-eGK" customClass="CompatibleAnimationView" customModule="Lottie">
-                                <rect key="frame" x="124" y="111" width="166" height="100"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="UzR-J6-Onf"/>
-                                    <constraint firstAttribute="width" constant="166" id="e3W-0u-xA6"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Y6K-SO-eGK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Q73-8Q-UBX"/>
                             <constraint firstItem="KJE-8J-jRB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WGm-kr-7B7"/>
                             <constraint firstItem="KJE-8J-jRB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="phk-xi-pAs"/>
-                            <constraint firstItem="Y6K-SO-eGK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="qXo-SC-HBM"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="coderAnimationView" destination="Y6K-SO-eGK" id="SRo-95-5nf"/>
-                        <outlet property="imageView" destination="KJE-8J-jRB" id="0LC-Yq-BGB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
