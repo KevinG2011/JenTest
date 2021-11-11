@@ -28,7 +28,6 @@
 		2A9B499A26F046C100505E3A /* NSArray+HJBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B499926F046C100505E3A /* NSArray+HJBlocks.m */; };
 		2AB29CD5237C150500A1A8CB /* JenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB29CD4237C150500A1A8CB /* JenTest.swift */; };
 		2AB8AC9227211B020051C134 /* PrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB8AC9127211B020051C134 /* PrintViewController.m */; };
-		2AB8AC962721349B0051C134 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB8AC952721349B0051C134 /* icon.png */; };
 		2AC86EEA273A67F500ED9393 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86EE9273A67F500ED9393 /* ContentView.swift */; };
 		2AC86EEC273A680E00ED9393 /* QuadTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86EEB273A680E00ED9393 /* QuadTree.swift */; };
 		2AC86EEE273A681F00ED9393 /* QuadTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86EED273A681F00ED9393 /* QuadTreeView.swift */; };
@@ -101,7 +100,6 @@
 		2AB85D4B273235D2003516C7 /* Class.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Class.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AB8AC9027211B020051C134 /* PrintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintViewController.h; sourceTree = "<group>"; };
 		2AB8AC9127211B020051C134 /* PrintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
-		2AB8AC952721349B0051C134 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		2AC86EE7273A278C00ED9393 /* Exercise01.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Exercise01.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AC86EE9273A67F500ED9393 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2AC86EEB273A680E00ED9393 /* QuadTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadTree.swift; sourceTree = "<group>"; };
@@ -251,7 +249,6 @@
 		2ADB66C926EA1BC000173E1B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2AB8AC952721349B0051C134 /* icon.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -376,7 +373,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB8AC962721349B0051C134 /* icon.png in Resources */,
 				2A120ABB226F42210084DB8F /* LaunchScreen.storyboard in Resources */,
 				2A43A1A426E8DF9F003F618A /* filedata.xcassets in Resources */,
 				2A120AB8226F42210084DB8F /* Assets.xcassets in Resources */,

@@ -51,3 +51,9 @@ final class ArticlesViewModel {
         }
     }
 }
+
+extension ArticlesViewModel: NetworkingDelegate {
+    func headers(for networking: Networking) -> [String: String] {
+        ["Content-Type": "application/vnd.api+json; charset=utf-8"]
+    }
+}

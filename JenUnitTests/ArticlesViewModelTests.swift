@@ -16,10 +16,12 @@ class ArticlesViewModelTests: XCTestCase {
     
     override func setUpWithError() throws {
         try super.setUpWithError()
+        viewModel = ArticlesViewModel(networker: MockNetworker())
     }
     
     func testArticlesAreFetchedCorrectly() {
-        
+        XCTAssert(viewModel.articles.isEmpty)
+        viewModel.fetchArticles()
     }
 }
 
