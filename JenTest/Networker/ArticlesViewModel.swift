@@ -26,12 +26,8 @@ final class ArticlesViewModel {
                 return
             }
             DispatchQueue.main.async {
-                do {
-                    self.articles = try Array(from: data)
-                    self.articles.forEach { print($0.name) }
-                } catch {
-                    print("decode error")
-                }
+                self.articles = data
+                self.articles.forEach { print($0.name) }
             }
         }
     }
@@ -47,7 +43,7 @@ final class ArticlesViewModel {
                 print("URLSession dataTask error:", error ?? "nil")
                 return
             }
-            findArticle.downloadedImage = UIImage(data: data)
+            findArticle.downloadedImage = data
         }
     }
 }

@@ -14,3 +14,21 @@ func max<T: Comparable>(lhs: T, rhs: T) -> T {
 }
 
 ///Generic types
+class BaseNetworker {
+    static func whoAmI() {
+        print(self)
+    }
+}
+
+BaseNetworker.whoAmI()
+
+class WebsocketNetworker: BaseNetworker {
+    static func whoAmI() -> BaseNetworker.Type {
+        return self
+    }
+}
+
+let type: BaseNetworker.Type = WebsocketNetworker.whoAmI()
+print(type)
+let networkerType: BaseNetworker.Type = BaseNetworker.self
+

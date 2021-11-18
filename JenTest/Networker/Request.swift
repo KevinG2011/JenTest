@@ -18,5 +18,13 @@ enum HTTPMethod: String {
 protocol Request {
     var url: URL { get }
     var method: HTTPMethod { get }
+    associatedtype Output
+    func decode(_ data: Data) throws -> Output
 }
 
+extension Request where Output: Decodable {
+    func decode(_ data: Data) throws -> Output {
+        let decoder = JSONDecoder()
+        return try decoder.decode(Output.self, from: data)
+    }
+}

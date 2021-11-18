@@ -8,7 +8,6 @@ platform :ios, '9.0'
 def main_project_pods
     pod 'KVOController'
     pod 'PromisesObjC'
-    pod 'YYCategories'
     pod 'lottie-ios'
     pod 'LookinServer', :configurations => ['Debug']
 end
