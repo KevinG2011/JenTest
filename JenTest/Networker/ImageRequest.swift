@@ -6,7 +6,6 @@
 //  Copyright © 2021 MJHF. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 enum DataError: Swift.Error {
@@ -14,6 +13,7 @@ enum DataError: Swift.Error {
 }
 
 struct ImageRequest: Request {
+    typealias Output = UIImage
     let url: URL
     var method: HTTPMethod { .get }
     

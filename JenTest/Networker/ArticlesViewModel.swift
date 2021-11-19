@@ -37,13 +37,12 @@ final class ArticlesViewModel {
             return
         }
         let request = ImageRequest(url: article.image)
-        
-        let _ = networker.fetch(request) { data, error in
-            guard let data = data else {
+        let _ = networker.fetchWithCache(request) { image, error in
+            guard let image = image else {
                 print("URLSession dataTask error:", error ?? "nil")
                 return
             }
-            findArticle.downloadedImage = data
+            findArticle.downloadedImage = image
         }
     }
 }

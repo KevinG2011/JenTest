@@ -7,15 +7,19 @@
 //
 
 import Foundation
+import UIKit
 
 protocol Networking {
     var delegate: NetworkingDelegate? { get set }
     
     func fetch<R: Request>(_ request: R, completion: @escaping (R.Output?, Error?) -> Void) -> URLSessionTask?
     func fetch<T: Decodable>(url: URL, completion: @escaping (T?, Error?) -> Void) -> URLSessionTask?
+    func fetchWithCache<R: Request>(_ request: R, completion: @escaping (R.Output?, Error?) -> Void) -> URLSessionTask? where R.Output == UIImage
 }
 
 class Networker: Networking {
+    private let imageCache = RequestCache<UIImage>()
+    
     weak var delegate: NetworkingDelegate?
     
     func fetch<R: Request>(_ request: R, completion: @escaping (R.Output?, Error?) -> Void) -> URLSessionTask? {
@@ -44,6 +48,20 @@ class Networker: Networking {
         }
         task.resume()
         return task
+    }
+    
+    func fetchWithCache<R: Request>(_ request: R, completion: @escaping (R.Output?, Error?) -> Void) -> URLSessionTask? where R.Output == UIImage {
+        if let output = imageCache.response(for: request) {
+            completion(output, nil)
+            return nil;
+        }
+        
+        return fetch(request) { [unowned self] output, error in
+            if let output = output, error == nil {
+                self.imageCache.saveResponse(output, for: request)
+            }
+            completion(output, error)
+        }
     }
     
     func fetch<T: Decodable>(url: URL, completion: @escaping (T?, Error?) -> Void) -> URLSessionTask? {
