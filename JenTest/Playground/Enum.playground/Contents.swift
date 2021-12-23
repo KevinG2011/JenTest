@@ -39,12 +39,6 @@ enum Intensity: Int {
 let highOrder = Intensity.high.rawValue
 let possibleIntensity = Intensity(rawValue: 0)
 
-///递归枚举
-enum ArithmeticExpression {
-    case number(Int)
-    indirect case addition(ArithmeticExpression, ArithmeticExpression)
-    indirect case multiplication(ArithmeticExpression, ArithmeticExpression)
-}
 
 ///嵌套类型
 struct BlackjackCard {
@@ -59,7 +53,8 @@ struct BlackjackCard {
         case two = 2, three, four, five, six, seven, eight, nine, ten
         case jack, queen, king, ace
         struct Values {
-            let first: Int, second: Int?
+            let first: Int
+            let second: Int?
         }
         var values: Values {
             switch self {
@@ -74,7 +69,9 @@ struct BlackjackCard {
     }
 
     // BlackjackCard 的属性和方法
-    let rank: Rank, suit: Suit
+    let rank: Rank
+    let suit: Suit
+    
     var description: String {
         var output = "suit is \(suit.rawValue),"
         output += " value is \(rank.values.first)"
@@ -87,3 +84,10 @@ struct BlackjackCard {
 
 let heartsSymbol = BlackjackCard.Suit.hearts.rawValue
 
+
+///递归枚举
+enum ArithmeticExpression {
+    case number(Int)
+    indirect case addition(ArithmeticExpression, ArithmeticExpression)
+    indirect case multiplication(ArithmeticExpression, ArithmeticExpression)
+}

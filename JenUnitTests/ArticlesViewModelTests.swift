@@ -26,23 +26,31 @@ class ArticlesViewModelTests: XCTestCase {
 }
 
 class MockNetworker: Networking {
-    func fetch(_ request: Request, completion: @escaping (Data?, Error?) -> Void) -> URLSessionTask? {
-        let outputData: Data
+    var delegate: NetworkingDelegate?
+    
+    func fetch<R: Request>(_ request: R, completion: @escaping (R.Output?, Error?) -> Void) -> URLSessionTask? {
+        var output: R.Output?
         switch request {
-        case is ArticleRequest:
-            let article = Article(
-                name: "Articel Name",
-                description: "Article Description",
-                image: URL(string: "https://image.com")!,
-                id: "Articel ID",
-                downloadedImage: nil)
-            let articleData = ArticleData(article: article)
-            let articles = Articles(data: [articleData])
-            outputData = try! JSONEncoder().encode(articles)
-        default:
-            outputData = Data()
+            case is ArticleRequest:
+                let article = Article(
+                    name: "Articel Name",
+                    description: "Article Description",
+                    image: URL(string: "https://image.com")!,
+                    id: "Articel ID",
+                    downloadedImage: nil)
+                let articleData = ArticleData(article: article)
+                output = Articles(data: [articleData]) as? R.Output
+            default: break
         }
-        completion(outputData, nil)
+        completion(output, nil)
+        return nil
+    }
+    
+    func fetch<T: Decodable>(url: URL, completion: @escaping (T?, Error?) -> Void) -> URLSessionTask? {
+        return nil
+    }
+    
+    func fetchWithCache<R: Request>(_ request: R, completion: @escaping (R.Output?, Error?) -> Void) -> URLSessionTask? where R.Output == UIImage {
         return nil
     }
 }

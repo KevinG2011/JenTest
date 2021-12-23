@@ -28,6 +28,8 @@
 		2A609384273BA02F000D7D26 /* URLSessionDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A609383273BA02F000D7D26 /* URLSessionDecodable.swift */; };
 		2A609387273BAE01000D7D26 /* ArticlesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A609385273BAD0D000D7D26 /* ArticlesViewModelTests.swift */; };
 		2A84313726E795A400A6F209 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A84313626E7958A00A6F209 /* libc++.tbd */; };
+		2A87999D276CA90400C3165C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A87999C276CA90400C3165C /* String+Extensions.swift */; };
+		2A8CC5EA2774293C0065BA3E /* FoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CC5E92774293C0065BA3E /* FoundationTests.swift */; };
 		2A9B499126F0456100505E3A /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B498F26F0456100505E3A /* NSString+Ext.m */; };
 		2A9B499426F045E600505E3A /* NSDictionary+HJBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B499326F045E600505E3A /* NSDictionary+HJBlocks.m */; };
 		2A9B499A26F046C100505E3A /* NSArray+HJBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B499926F046C100505E3A /* NSArray+HJBlocks.m */; };
@@ -71,6 +73,7 @@
 /* Begin PBXFileReference section */
 		1C6427A10D4DC6503515AFD9 /* Pods-JenTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenTest.release.xcconfig"; path = "Target Support Files/Pods-JenTest/Pods-JenTest.release.xcconfig"; sourceTree = "<group>"; };
 		23A88EEF7A21D891E820C2E7 /* Pods-JenTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenTest.debug.xcconfig"; path = "Target Support Files/Pods-JenTest/Pods-JenTest.debug.xcconfig"; sourceTree = "<group>"; };
+		2A04692B277180EE000BBD55 /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2A0D3E1027366D2200C169F0 /* ARC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ARC.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2A120AAB226F421F0084DB8F /* JenTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A120AAE226F421F0084DB8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,7 +103,9 @@
 		2A6A2D6F273121BD00E4FEDA /* Enum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2A84313626E7958A00A6F209 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		2A84313826E795AA00A6F209 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		2A87999C276CA90400C3165C /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		2A8B041427449D7E0031D8DE /* Generic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Generic.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2A8CC5E92774293C0065BA3E /* FoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTests.swift; sourceTree = "<group>"; };
 		2A9B498F26F0456100505E3A /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
 		2A9B499026F0456100505E3A /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
 		2A9B499226F045E600505E3A /* NSDictionary+HJBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HJBlocks.h"; sourceTree = "<group>"; };
@@ -252,6 +257,7 @@
 				2AC86EE7273A278C00ED9393 /* Exercise01.playground */,
 				2AC86EF1273A83FC00ED9393 /* Protocols.playground */,
 				2A8B041427449D7E0031D8DE /* Generic.playground */,
+				2A04692B277180EE000BBD55 /* Test.playground */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -259,6 +265,7 @@
 		2A9B498E26F0455100505E3A /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				2A87999C276CA90400C3165C /* String+Extensions.swift */,
 				2ADF245E27114337008B817C /* UIColor+Hex.h */,
 				2ADF245D27114337008B817C /* UIColor+Hex.m */,
 				2A9B499226F045E600505E3A /* NSDictionary+HJBlocks.h */,
@@ -292,8 +299,9 @@
 		2AE2C64C2484FA51001F69B6 /* JenUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				2A609385273BAD0D000D7D26 /* ArticlesViewModelTests.swift */,
 				2AE2C65D248505F7001F69B6 /* Frameworks.h */,
+				2A609385273BAD0D000D7D26 /* ArticlesViewModelTests.swift */,
+				2A8CC5E92774293C0065BA3E /* FoundationTests.swift */,
 				2AE2C64D2484FA51001F69B6 /* RACStreamTests.m */,
 				2AE2C65B2485043B001F69B6 /* RACSignalTests.m */,
 				2A25A72024860A7E00402A55 /* RACRequenceTests.m */,
@@ -508,6 +516,7 @@
 				2AFA77FE2745F9BD00E9A0D5 /* ImageRequest.swift in Sources */,
 				2A9B499126F0456100505E3A /* NSString+Ext.m in Sources */,
 				2A120ABE226F42210084DB8F /* main.m in Sources */,
+				2A87999D276CA90400C3165C /* String+Extensions.swift in Sources */,
 				2A60937A273B7351000D7D26 /* Networker.swift in Sources */,
 				2A609380273B8E44000D7D26 /* ViewController.swift in Sources */,
 				2A609376273B7010000D7D26 /* Request.swift in Sources */,
@@ -530,6 +539,7 @@
 				2A609387273BAE01000D7D26 /* ArticlesViewModelTests.swift in Sources */,
 				2AE2C64E2484FA51001F69B6 /* RACStreamTests.m in Sources */,
 				2A25A72124860A7E00402A55 /* RACRequenceTests.m in Sources */,
+				2A8CC5EA2774293C0065BA3E /* FoundationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
